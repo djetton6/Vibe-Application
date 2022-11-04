@@ -4,17 +4,18 @@ import { Tile } from 'react-native-elements';
 
 
 
-export default function Interests() {
+const Interests = () => {
     return (
         <View style={styles.container}>
           <Text className="titleScreen">Select Your Interests</Text>
           <StatusBar style="auto" />
           <Tile
-            imageSrc={require('./img/path')}
-            title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolore exercitationem"
-            featured caption="Some Caption Text"
+            imageSrc={require('https://i.etsystatic.com/19755900/r/il/6860a7/2152303502/il_794xN.2152303502_ba5a.jpg')}
+            title="Sports"
+            featured caption="Local Sports Teams In Your Area"
         />;
         </View>
       );
-
 }
+
+export default Interests
